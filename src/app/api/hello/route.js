@@ -1,6 +1,6 @@
 import { Client } from 'pg';
 
-export async function GET(request) {
+export async function GET() {
   // Create a new PostgreSQL client instance
   const client = new Client({
     connectionString: process.env.DATABASE_URL, // Use the connection string from .env.local
